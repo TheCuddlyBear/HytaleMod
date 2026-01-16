@@ -1,4 +1,4 @@
-package me.thecuddlybear.hyadditions;
+package me.thecuddlybear.hyadditions.command;
 
 import com.hypixel.hytale.protocol.GameMode;
 import com.hypixel.hytale.server.core.Message;

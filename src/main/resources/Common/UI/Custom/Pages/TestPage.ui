@@ -1,0 +1,15 @@
+$C = "../Common.ui";
+
+$C.@Panel {
+    Anchor: (Width: 480, Height: 380);
+    Background: #141c26(0.98);
+    LayoutMode: Top;
+    Padding: (Full: 20);
+
+    $C.@TextButton #TextButton {
+        Text: "Love Button!";
+        Anchor: (Width: 130, Height: 230);
+        Style: $C.@DefaultTextButtonStyle;
+    }
+
+}

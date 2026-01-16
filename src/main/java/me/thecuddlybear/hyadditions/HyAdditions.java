@@ -3,7 +3,9 @@ package me.thecuddlybear.hyadditions;
 import com.hypixel.hytale.logger.HytaleLogger;
 import com.hypixel.hytale.server.core.plugin.JavaPlugin;
 import com.hypixel.hytale.server.core.plugin.JavaPluginInit;
+import me.thecuddlybear.hyadditions.command.ExampleCommand;
 import me.thecuddlybear.hyadditions.command.TestTitleCommand;
+import me.thecuddlybear.hyadditions.command.TestUiCommand;
 
 import javax.annotation.Nonnull;
 
@@ -25,5 +27,6 @@ public class HyAdditions extends JavaPlugin {
         LOGGER.atInfo().log("Setting up plugin " + this.getName());
         this.getCommandRegistry().registerCommand(new ExampleCommand(this.getName(), this.getManifest().getVersion().toString()));
         this.getCommandRegistry().registerCommand(new TestTitleCommand(this.getName(), this.getManifest().getVersion().toString(), false));
+        this.getCommandRegistry().registerCommand(new TestUiCommand());
     }
 }
